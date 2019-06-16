@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-curriculum-vitae';
+  idade: number = 26;
+  estadoCivil: string = 'solteiro';
 }
