@@ -1,13 +1,20 @@
 {
   "name": "ng-curriculum-vitae",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:KsAkira10/ng-curriculum-vitae.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "predeploy": "npm run build:prod",
+    "deploy": "npx gh-pages -d ./dist"
   },
   "private": true,
   "dependencies": {
@@ -28,10 +35,11 @@
     "@angular/cli": "~8.0.3",
     "@angular/compiler-cli": "~8.0.1",
     "@angular/language-service": "~8.0.1",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "gh-pages": "^2.0.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
